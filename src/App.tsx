@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Banner from './Components/Banner';
+import Input from './Components/Input';
+
+const homeBanner = 
+"          /$$$$$$                                      /$$$$$$             /$$                                               /$$      \n"+
+"         /$$__  $$                                    |_  $$_/            | $$                                              | $$      \n"+
+"        | $$  \\ $$  /$$$$$$   /$$$$$$  /$$$$$$$         | $$   /$$$$$$$  /$$$$$$    /$$$$$$   /$$$$$$   /$$$$$$   /$$$$$$$ /$$$$$$    \n"+
+"        | $$  | $$ /$$__  $$ /$$__  $$| $$__  $$        | $$  | $$__  $$|_  $$_/   /$$__  $$ /$$__  $$ /$$__  $$ /$$_____/|_  $$_/    \n"+
+"        | $$  | $$| $$  \\ $$| $$$$$$$$| $$  \\ $$        | $$  | $$  \\ $$  | $$    | $$$$$$$$| $$  \\__/| $$$$$$$$|  $$$$$$   | $$   \n"+
+"        | $$  | $$| $$  | $$| $$_____/| $$  | $$        | $$  | $$  | $$  | $$ /$$| $$_____/| $$      | $$_____/ \\____  $$  | $$ /$$  \n"+
+"        |  $$$$$$/| $$$$$$$/|  $$$$$$$| $$  | $$       /$$$$$$| $$  | $$  |  $$$$/|  $$$$$$$| $$      |  $$$$$$$ /$$$$$$$/  |  $$$$/  \n"+
+"         \\______/ | $$____/  \\_______/|__/  |__/      |______/|__/  |__/   \\___/   \\_______/|__/       \\_______/|_______/    \\___/    \n"+
+"                  | $$                                                                                                                \n"+                                                                                                              
+"                  | $$                                                                                                                \n"+                                                                                                             
+"                  |__/                                                                                                                \n";     
+const promptVal = ">";
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Banner banner={homeBanner} />
+      <Input prompt={promptVal}/>
     </div>
   );
-}
+};
 
 export default App;
